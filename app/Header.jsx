@@ -4,6 +4,7 @@ import Link from 'next/link'
 import styles from "./header.module.css"
 import { useEffect, useState } from 'react'
 import Logo from "./assets/images/ColorfulTire.png"
+import localFont from 'next/font/local';
 
 const marioCartFont = localFont({
     src: "./assets/fonts/mario_kart_f2.ttf",

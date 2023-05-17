@@ -4,6 +4,7 @@ import Header from './Header'
 import Logo from "./assets/images/ColorfulTire.png"
 import Markusz from "./assets/images/markusz.png"
 import styles from "./page.module.css"
+import localFont from 'next/font/local';
 
 const marioCartFont = localFont({
   src: "./assets/fonts/mario_kart_f2.ttf",
