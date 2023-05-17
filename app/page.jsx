@@ -1,12 +1,15 @@
 import Image from 'next/image'
-import { marioCartFont } from './layout'
 import Head from 'next/head';
 import Header from './Header'
 import Logo from "./assets/images/ColorfulTire.png"
 import Markusz from "./assets/images/markusz.png"
 import styles from "./page.module.css"
 
-
+const marioCartFont = localFont({
+  src: "./assets/fonts/mario_kart_f2.ttf",
+  style: "normal",
+  weight: "900"
+})
 
 export default function Home({ params }) {
   return (

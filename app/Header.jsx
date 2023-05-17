@@ -1,10 +1,15 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import { marioCartFont } from './layout'
 import styles from "./header.module.css"
 import { useEffect, useState } from 'react'
 import Logo from "./assets/images/ColorfulTire.png"
+
+const marioCartFont = localFont({
+    src: "./assets/fonts/mario_kart_f2.ttf",
+    style: "normal",
+    weight: "900"
+})
 
 export default function Header({ page }) {
 
