@@ -141,12 +141,16 @@
     border-radius: 0.5rem;
     margin-left: 1rem;
     transition: 100ms all ease-in-out;
+    user-select: none;
+    pointer-events: none;
   }
 
   .currentPage {
     background-color: transparent;
     color: whitesmoke;
     border: 3px solid whitesmoke;
+    user-select: none;
+    pointer-events: none;
   }
 
   .close {

@@ -65,9 +65,9 @@ export default function Header({ page }) {
                                 <svg xmlns="http://www.w3.org/2000/svg" fill='currentColor' viewBox="0 96 960 960"><path d="m249 873-66-66 231-231-231-231 66-66 231 231 231-231 66 66-231 231 231 231-66 66-231-231-231 231Z" /></svg>
                             </button>
 
-                            <Link href={"/"} className={page === "home" && styles.currentPage}>Főoldal</Link>
-                            <Link href={"/foglalas"} className={page === "foglalas" && styles.currentPage} >Foglalás</Link>
-                            <Link href={"/elerhetoseg"} className={page === "elerhetoseg" && styles.currentPage}>Elérhetőség</Link>
+                            <Link href={"/"} className={page === "home" ? styles.currentPage : undefined}>Főoldal</Link>
+                            <Link href={"/foglalas"} className={page === "foglalas" ? styles.currentPage : undefined} >Foglalás</Link>
+                            <Link href={"/elerhetoseg"} className={page === "elerhetoseg" ? styles.currentPage : undefined}>Elérhetőség</Link>
                         </nav>
                     )}
                 </>
@@ -78,9 +78,9 @@ export default function Header({ page }) {
                         <span className={marioCartFont.className}>Apoapsis</span>
                     </div>
                     <div className={styles.headerRight}>
-                        <Link href={"/"} className={page === "home" && styles.currentPage}>Főoldal</Link>
-                        <Link href={"/foglalas"} className={page === "foglalas" && styles.currentPage}>Foglalás</Link>
-                        <Link href={"/elerhetoseg"} className={page === "elerhetoseg" && styles.currentPage}>Elérhetőség</Link>
+                        <Link href={"/"} className={page === "home" ? styles.currentPage : undefined}>Főoldal</Link>
+                        <Link href={"/foglalas"} className={page === "foglalas" ? styles.currentPage : undefined}>Foglalás</Link>
+                        <Link href={"/elerhetoseg"} className={page === "elerhetoseg" ? styles.currentPage : undefined}>Elérhetőség</Link>
                     </div>
                 </>
             )
