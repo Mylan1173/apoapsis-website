@@ -34,11 +34,11 @@ export default function Header({ page }) {
         }
     }
 
-    useEffect(() => {
-        if (typeof window !== "undefined" && windowSmall === null) {
-            setWindowSmall(window.innerWidth < 1000)
-        }
-    })
+    /*     useEffect(() => {
+            if (typeof window !== "undefined" && windowSmall === null) {
+                setWindowSmall(window.innerWidth < 1000)
+            }
+        }) */
 
     useEffect(() => {
         window.addEventListener("resize", () => setWindowSmall(window.innerWidth < 1000))
