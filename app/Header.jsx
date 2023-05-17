@@ -1,5 +1,4 @@
 "use client"
-
 import Image from 'next/image'
 import Link from 'next/link'
 import { marioCartFont } from './layout'
@@ -9,13 +8,12 @@ import Logo from "./assets/images/ColorfulTire.png"
 
 export default function Header() {
 
-    const [windowSmall, setWindowSmall] = useState(window.innerWidth < 1000)
+    const [windowSmall, setWindowSmall] = useState(null)
 
     const [navOpen, setNavOpen] = useState(false)
     const [navOpened, setNavOpened] = useState(false)
 
     const openNav = (bool) => {
-        console.log(bool);
         if (bool) {
             setNavOpen(true)
 
@@ -31,8 +29,14 @@ export default function Header() {
     }
 
     useEffect(() => {
+        if (typeof window !== "undefined" && windowSmall === null) {
+            setWindowSmall(window.innerWidth < 1000)
+        }
+    })
+
+    useEffect(() => {
         window.addEventListener("resize", () => setWindowSmall(window.innerWidth < 1000))
-        return _ => {
+        return () => {
             window.removeEventListener('resize', () => setWindowSmall(window.innerWidth < 1000))
         }
     })
