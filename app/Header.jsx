@@ -14,7 +14,7 @@ const marioCartFont = localFont({
 
 export default function Header({ page }) {
 
-    const [windowSmall, setWindowSmall] = useState(null)
+    const [windowSmall, setWindowSmall] = useState(window.innerWidth < 1000)
 
     const [navOpen, setNavOpen] = useState(false)
     const [navOpened, setNavOpened] = useState(false)
