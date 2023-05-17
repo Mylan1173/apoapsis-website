@@ -86,7 +86,7 @@
     background-color: transparent;
     display: grid;
     place-items: center;
-    transition: 150ms all ease-in-out;
+    transition: 100ms all ease-in-out;
   }
 
   .headerRight {
@@ -141,8 +141,6 @@
     border-radius: 0.5rem;
     margin-left: 1rem;
     transition: 100ms all ease-in-out;
-    user-select: none;
-    pointer-events: none;
   }
 
   .currentPage {
@@ -171,10 +169,10 @@
     border-radius: 0.5rem;
     color: var(--mario);
     border: 3px solid var(--mario);
-    transition: 50ms all ease-in-out;
+    transition: 100ms all ease-in-out;
   }
 
-  :is(.headerLeft, .nav > *):active {
+  :is(.headerLeft, .nav > *, .close > svg):active {
     transform: scale(85%);
   }
 }
