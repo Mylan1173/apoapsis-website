@@ -35,12 +35,6 @@ export default function Header({ page }) {
         }
     }
 
-    /*     useEffect(() => {
-            if (typeof window !== "undefined" && windowSmall === null) {
-                setWindowSmall(window.innerWidth < 1000)
-            }
-        }) */
-
     useEffect(() => {
         window.addEventListener("resize", () => setWindowSmall(window.innerWidth < 1000))
         return () => {
@@ -58,7 +52,7 @@ export default function Header({ page }) {
                         </button>
                         <div className={styles.headerRight}>
                             <span className={marioCartFont.className}>Apoapsis</span>
-                            <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} />
+                            <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} preload />
                         </div>
 
                         {navOpen && (
@@ -85,8 +79,7 @@ export default function Header({ page }) {
                             <Link href={"/elerhetoseg"} className={page === "elerhetoseg" ? styles.currentPage : undefined}>Elérhetőség</Link>
                         </div>
                     </>
-                )
-                )
+                ))
             }
 
         </header >
