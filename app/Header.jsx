@@ -56,7 +56,7 @@ export default function Header({ page }) {
                     </button>
                     <div className={styles.headerRight}>
                         <span className={marioCartFont.className}>Apoapsis</span>
-                        <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} priority />
+                        <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} />
                     </div>
 
                     {navOpen && (
