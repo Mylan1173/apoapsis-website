@@ -1,73 +1,3 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  height: 10vh;
-  max-height: 100px;
-  overflow: hidden;
-  z-index: 1;
-  background-color: rgba(24, 24, 24, 0.4);
-  user-select: none;
-}
-
-.headerLeft {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  font-weight: bolder;
-  font-size: 1.6rem;
-}
-
-.logo {
-  height: 130%;
-  width: auto;
-  user-select: none;
-  pointer-events: none;
-}
-
-.headerRight {
-  height: 100%;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10rem;
-  font-weight: 600;
-  font-size: 1.3rem;
-}
-
-.headerRight > * {
-  width: 12rem;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  border: 2px solid whitesmoke;
-  text-align: center;
-  transition: 100ms all ease-in-out;
-  background-color: rgba(24, 24, 24, 0.3);
-}
-
-.headerRight > *:hover:not(.currentPage) {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: var(--bg);
-  transform: translate(5%, 5%);
-}
-
-.currentPage {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: var(--bg);
-  cursor: default;
-}
-
 .coverPage {
   width: 100%;
   height: 100vh;
@@ -86,7 +16,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("assets/gokartbg.jpg");
+  background-image: url("assets/images/gokartbg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,38 +29,55 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 1rem;
+  gap: 15%;
 }
 
 .coverTireLogo {
-  width: 35rem;
+  width: 25vw;
   height: auto;
   user-select: none;
   pointer-events: none;
-  filter: drop-shadow(0.2rem 0.2rem 0.5rem var(--mario));
+  filter: drop-shadow(0 0 0.5rem var(--mario));
 }
 
-.coverX {
-  width: 5%;
-  font-size: 10rem;
-  font-weight: 900;
-  user-select: none;
+.coverTitle {
+  margin-top: 5rem;
+  font-size: min(10vw, 3rem);
+  text-align: center;
+}
+
+.coverTitle span:first-child {
+  color: var(--mario);
+}
+.coverTitle span:nth-child(2) {
   color: var(--wario);
-  text-shadow: 0.2rem 0.2rem 0.5rem var(--wario);
+}
+.coverTitle span:last-child {
+  color: var(--luigi);
 }
 
 .coverMarkuszLogo {
-  padding-left: 6rem;
-  width: 35rem;
+  width: 25vw;
   height: auto;
   user-select: none;
   pointer-events: none;
-  filter: drop-shadow(0.2rem 0.2rem 0.5rem var(--luigi));
+  filter: drop-shadow(0 0rem 0.5rem var(--luigi));
 }
 
 .coverDown {
   width: 100px;
-
+  animation: ease-in-out 2s infinite UpNDown;
   color: whitesmoke;
   transform: translateY(120%);
+}
+
+@keyframes UpNDown {
+  0%,
+  100% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateY(120%);
+  }
 }
