@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { marioCartFont } from './layout'
+import Head from 'next/head';
 import Header from './Header'
 import Logo from "./assets/images/ColorfulTire.png"
 import Markusz from "./assets/images/markusz.png"
@@ -10,6 +11,10 @@ import styles from "./page.module.css"
 export default function Home({ params }) {
   return (
     <main>
+      <Head>
+        <title>Főoldal - Apoapsis</title>
+        <meta name="description" content="Apoapsis Rendezvények Kft." />
+      </Head>
       <Header />
       <section className={styles.coverPage}>
         <div className={styles.coverFlex}>
