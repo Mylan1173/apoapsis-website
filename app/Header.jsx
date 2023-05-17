@@ -6,7 +6,7 @@ import styles from "./header.module.css"
 import { useEffect, useState } from 'react'
 import Logo from "./assets/images/ColorfulTire.png"
 
-export default function Header() {
+export default function Header({ page }) {
 
     const [windowSmall, setWindowSmall] = useState(null)
 
@@ -59,9 +59,9 @@ export default function Header() {
                                 <svg xmlns="http://www.w3.org/2000/svg" fill='currentColor' viewBox="0 96 960 960"><path d="m249 873-66-66 231-231-231-231 66-66 231 231 231-231 66 66-231 231 231 231-66 66-231-231-231 231Z" /></svg>
                             </button>
 
-                            <Link href={"/"} className={styles.currentPage}>Főoldal</Link>
-                            <Link href={"/foglalas"} >Foglalás</Link>
-                            <Link href={"/elerhetoseg"}>Elérhetőség</Link>
+                            <Link href={"/"} className={page === "home" && styles.currentPage}>Főoldal</Link>
+                            <Link href={"/foglalas"} className={page === "foglalas" && styles.currentPage} >Foglalás</Link>
+                            <Link href={"/elerhetoseg"} className={page === "elerhetoseg" && styles.currentPage}>Elérhetőség</Link>
                         </nav>
                     )}
                 </>
@@ -72,9 +72,9 @@ export default function Header() {
                         <span className={marioCartFont.className}>Apoapsis</span>
                     </div>
                     <div className={styles.headerRight}>
-                        <Link href={"/"} className={styles.currentPage}>Főoldal</Link>
-                        <Link href={"/foglalas"} >Foglalás</Link>
-                        <Link href={"/elerhetoseg"}>Elérhetőség</Link>
+                        <Link href={"/"} className={page === "home" && styles.currentPage}>Főoldal</Link>
+                        <Link href={"/foglalas"} className={page === "foglalas" && styles.currentPage}>Foglalás</Link>
+                        <Link href={"/elerhetoseg"} className={page === "elerhetoseg" && styles.currentPage}>Elérhetőség</Link>
                     </div>
                 </>
             )

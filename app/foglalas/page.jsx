@@ -1,12 +1,13 @@
+import Header from '.././Header'
+
 export const metadata = {
     title: "Foglalás - Apoapsis"
 }
 
 export default function Fogalalas() {
     return (
-        <div>
-
-            <h1>Empty</h1>
-        </div>
+        <main>
+            <Header page="foglalas" />
+        </main>
     )
 }
