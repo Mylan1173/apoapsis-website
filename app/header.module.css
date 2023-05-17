@@ -86,6 +86,7 @@
     background-color: transparent;
     display: grid;
     place-items: center;
+    transition: 150ms all ease-in-out;
   }
 
   .headerRight {
@@ -139,7 +140,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     margin-left: 1rem;
-    transition: 50ms all ease-in-out;
+    transition: 100ms all ease-in-out;
   }
 
   .currentPage {
@@ -169,7 +170,7 @@
     transition: 50ms all ease-in-out;
   }
 
-  :is(.headerLeft, .close, .nav):active {
+  :is(.headerLeft, .nav > *):active {
     transform: scale(85%);
   }
 }

@@ -74,7 +74,7 @@ export default function Header({ page }) {
             ) : (
                 <>
                     <div className={styles.headerLeft}>
-                        <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} priority />
+                        <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} />
                         <span className={marioCartFont.className}>Apoapsis</span>
                     </div>
                     <div className={styles.headerRight}>
