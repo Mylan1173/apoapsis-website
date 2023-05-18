@@ -141,7 +141,7 @@
     border-radius: 0.5rem;
     margin-left: 1rem;
     transition: 100ms all ease-in-out;
-    user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .currentPage {
