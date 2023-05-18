@@ -81,3 +81,105 @@
     transform: translateY(120%);
   }
 }
+
+.section {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  gap: 2rem;
+}
+
+.Text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tiregray);
+  padding: 4rem;
+  border-radius: 1rem;
+  transition: 150ms all ease-in-out;
+}
+
+@media (hover: hover) {
+  .Text[data-color="yellow"]:is(:hover, :active) {
+    box-shadow: 0rem 0rem 1rem var(--wario);
+  }
+  .Text[data-color="red"]:is(:hover, :active) {
+    box-shadow: 0rem 0rem 1rem var(--mario);
+  }
+  .Text[data-color="green"]:is(:hover, :active) {
+    box-shadow: 0rem 0rem 1rem var(--luigi);
+  }
+}
+
+.Text > h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.Text[data-color="yellow"] {
+  color: var(--wario);
+}
+.Text[data-color="red"] {
+  color: var(--mario);
+}
+.Text[data-color="green"] {
+  color: var(--luigi);
+}
+
+.Text > p {
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.Text > ul {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.Image {
+  width: 30vw;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .section {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    gap: 2rem;
+  }
+
+  .Text {
+    width: 90%;
+    padding: 3rem 1rem;
+  }
+
+  .Image[data-type="image"] {
+    order: 2;
+  }
+  .Text[data-type="text"] {
+    order: 1;
+  }
+
+  .Image {
+    height: 30vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+  }
+}

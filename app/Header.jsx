@@ -15,7 +15,7 @@ const marioCartFont = localFont({
 export default function Header({ page }) {
 
     const pageLoaded = useState(typeof window !== "undefined")[0]
-    const [windowSmall, setWindowSmall] = useState(typeof window !== "undefined" && window.innerWidth < 1000)
+    const [windowSmall, setWindowSmall] = useState(typeof window !== "undefined" && window.innerWidth <= 1000)
 
     const [navOpen, setNavOpen] = useState(false)
     const [navOpened, setNavOpened] = useState(false)
@@ -35,10 +35,11 @@ export default function Header({ page }) {
         }
     }
 
+
     useEffect(() => {
-        window.addEventListener("resize", () => setWindowSmall(window.innerWidth < 1000))
+        window.addEventListener("resize", () => setWindowSmall(window.innerWidth <= 1000))
         return () => {
-            window.removeEventListener('resize', () => setWindowSmall(window.innerWidth < 1000))
+            window.removeEventListener('resize', () => setWindowSmall(window.innerWidth <= 1000))
         }
     })
 
