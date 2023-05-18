@@ -5,7 +5,7 @@ export const metadata = {
     title: "Foglalás - Apoapsis"
 }
 
-export default function Fogalalas() {
+export default function Foglalas() {
     return (
         <main>
             <Header page="foglalas" />
@@ -37,7 +37,7 @@ export default function Fogalalas() {
                         </div>
                         <div>
                             <label htmlFor="date">Dátum (éééé.hh.nn)</label><br />
-                            <input type="date" name="date" placeholder="2023.05.05 18:00" min="2023-01-01" />
+                            <input type="date" name="date" min="2023-01-01" />
                         </div>
                     </div>
                     <div className={styles.col2}>
