@@ -238,6 +238,7 @@
     font-family: "inter";
     margin-top: 1rem;
     transition: 100ms all ease-in-out;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .right button:active {
