@@ -1,4 +1,4 @@
-"use client"
+/* "use client"
 
 import Image from 'next/image'
 import { useState, useEffect, useRef } from 'react'
@@ -20,6 +20,6 @@ export default function SlideImage({ style, src }) {
     })
 
     return (
-        <Image src={src} className={style} ref={image} style={{ transform: [`translateX(${-image.width * })`] }} />
+        <Image src={src} className={style} ref={image} style={{ transform: [`translateX(${-image.width})`] }} />
     )
-}
+} */

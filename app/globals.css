@@ -9,48 +9,6 @@
   --bg: #181818;
 }
 
-/* ```
-Mario Red:
-rgb: 229, 37, 33
-hex: #e52521
-hsl: 1, 86, 90
-
-Luigi Green:
-rgb: 67, 176, 71
-hex: #43b047
-hsl: 122, 62, 69
-
-Wario Yellow:
-rgb: 255,255,49
-hex: #ffff31
-hsl: 60, 81, 100
-
-Tire Gray:
-rgb: 40, 40, 40
-hex: #282828
-hsl: 0, 0, 16
-
-Dark Gray:
-rgb: 91, 91, 91
-hex: #5b5b5b
-hsl: 0, 0, 36
-
-Light Gray:
-rgb: 178, 178, 178
-hex: #b2b2b2
-hsl: 0, 0, 70
-
-Black:
-rgb: 0, 0, 0
-hex: #000000
-hsl: 0, 0, 0
-
-White:
-rgb: 255, 255, 255
-hex: #ffffff
-hsl: 0, 0, 100
-``` */
-
 * {
   box-sizing: border-box;
   padding: 0;
