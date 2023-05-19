@@ -20,7 +20,7 @@ export default function Elerhetoseg() {
                     </div>
                     <div className={styles.row}>
                         <div>Telefonszám:</div>
-                        <div><a href="tel:+36 20 123 456" className={styles.link}>+36 20 123 456</a></div>
+                        <div><a href="tel:+36 20 123 456" className={styles.link}>+36 20 123 4567</a></div>
                     </div>
                     <div className={styles.row}>
                         <div>Cím:</div>
