@@ -50,7 +50,7 @@ export default function Foglalas() {
                             <input type="number" name="adults" placeholder="0-5" min={0} max={5} />
                         </div>
                         <div>
-                            <label htmlFor="children">Gyereket száma</label>
+                            <label htmlFor="children">Gyerekek száma</label>
                             <input type="number" name="children" placeholder="0-5" min={0} max={5} />
                         </div>
                         <div>

@@ -1,0 +1,140 @@
+.title {
+  margin-top: 12vh;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--wario);
+  margin-bottom: 2rem;
+}
+
+.box {
+  width: 90%;
+  height: fit-content;
+  background-color: var(--tiregray);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vw;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.table .row {
+  width: 100%;
+  transition: 150ms all ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.table > .row > div:first-child {
+  width: 50%;
+  font-size: 1.5rem;
+  color: var(--mario);
+}
+
+.table > .row > div:last-child {
+  width: 50%;
+  font-size: 1.5rem;
+  color: var(--luigi);
+}
+
+@media (hover: hover) {
+  .table .row:hover {
+    background-color: var(--bg);
+    border-radius: 1rem;
+  }
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.map div:last-child {
+  margin-left: auto;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.openings {
+  list-style: none;
+}
+
+.openings li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.openings li span:first-child {
+  width: 10rem;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 10vh;
+  width: 10vw;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 10vh;
+  width: 10vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .box {
+    padding: 1rem;
+  }
+
+  .table > .row {
+    max-width: 100%;
+    overflow: hidden;
+    width: fit-content;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .table > .row > div {
+    width: 100% !important;
+    font-size: min(5vw, 1.5rem) !important;
+  }
+
+  .openings li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .openings li span:first-child {
+    width: max(15vw, 7rem);
+  }
+
+  .map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .map div:last-child {
+    margin-left: none;
+  }
+}
