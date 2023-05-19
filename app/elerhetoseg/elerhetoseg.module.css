@@ -142,4 +142,8 @@
   .map div:last-child {
     margin-left: none;
   }
+
+  .title {
+    font-size: min(7vw, 2rem);
+  }
 }
