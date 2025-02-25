@@ -29,7 +29,7 @@ export default function Elerhetoseg() {
                                 <div>Budapest, Kossuth tér 12.</div>
                                 <div class="mapouter">
                                     <div class="gmap_canvas">
-                                        <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest, Kossuth tér 12&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                        <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest, Kossuth tér 12&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginheight="0" marginwidth="0">
                                         </iframe>
                                     </div>
                                 </div>

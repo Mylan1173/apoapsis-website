@@ -14,8 +14,8 @@ const marioCartFont = localFont({
 
 export default function Header({ page }) {
 
-    const pageLoaded = useState(typeof window !== "undefined")[0]
-    const [windowSmall, setWindowSmall] = useState(typeof window !== "undefined" && window.innerWidth <= 1000)
+    const [pageLoaded, setPageLoaded] = useState()
+    const [windowSmall, setWindowSmall] = useState()
 
     const [navOpen, setNavOpen] = useState(false)
     const [navOpened, setNavOpened] = useState(false)
@@ -35,6 +35,11 @@ export default function Header({ page }) {
         }
     }
 
+    useEffect(() => {
+        setPageLoaded(true)
+        setWindowSmall(window.innerWidth <= 1000)
+    })
+
 
     useEffect(() => {
         window.addEventListener("resize", () => setWindowSmall(window.innerWidth <= 1000))
@@ -53,7 +58,7 @@ export default function Header({ page }) {
                         </button>
                         <div className={styles.headerRight}>
                             <span className={marioCartFont.className}>Apoapsis</span>
-                            <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} preload />
+                            <Image src={Logo} alt="Apoapsis Logó" width={1000} height={1000} className={styles.logo} preload="asd" />
                         </div>
 
                         {navOpen && (
