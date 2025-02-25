@@ -27,9 +27,9 @@ export default function Elerhetoseg() {
                         <div>
                             <div className={styles.map}>
                                 <div>Budapest, Kossuth tér 12.</div>
-                                <div class="mapouter">
-                                    <div class="gmap_canvas">
-                                        <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest, Kossuth tér 12&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                <div className="mapouter">
+                                    <div className="gmap_canvas">
+                                        <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest, Kossuth tér 12&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
                                         </iframe>
                                     </div>
                                 </div>
@@ -72,21 +72,3 @@ export default function Elerhetoseg() {
         </main>
     )
 }
-
-{/* <div className={styles.left}>
-                    <div>E-mail cím:</div>
-                    <div>Telefonszám:</div>
-                    <div>Cím:</div>
-                    <div>Nyitvatartás:</div>
-                </div>
-                <div className={styles.right}>
-                    <a href="mailto:apoapsisrendezvenyek@gmail.com">apoapsisrendezvenyek@gmail.com</a>
-                    <a href="tel:+36 20 123 456">+36 20 123 456</a>
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest, Kossuth tér 12&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                            </iframe>
-                        </div>
-                    </div>
-                    <div>Budapest, Kossuth tér 12.</div>
-                </div> */}
